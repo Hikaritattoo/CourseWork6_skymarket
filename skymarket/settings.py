@@ -159,7 +159,7 @@ REST_FRAMEWORK = {
 
 SPECTACULAR_SETTINGS = {
     'TITLE': 'Ads API',
-    'DESCRIPTION': 'Ads site',
+    'DESCRIPTION': 'Ads description',
     'VERSION': '1.0.0',
 }
 
@@ -170,7 +170,8 @@ SIMPLE_JWT = {
 
 DJOSER = {
     'SERIALIZERS': {
-        'user_create': 'users.serializers.UserRegistrationSerializer'
+        'user_create': 'users.serializers.UserRegistrationSerializer',
+        'current_user': 'users.serializers.UserCurrentSerializer',
     },
     'LOGIN_FIELD': 'email'
 }

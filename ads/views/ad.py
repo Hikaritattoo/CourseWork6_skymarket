@@ -20,7 +20,7 @@ class AdViewSet(ModelViewSet):
     permission_classes = (UserPermissions,)
 
     @action(detail=False, methods=['get'], url_path=r'me', serializer_class=AdListSerializer)
-    def user_ads(self, queryset, request, *args, **kwargs):
+    def user_ads(self, request, queryset, *args, **kwargs):
         current_user = self.request.user
         user_ads = Ad.objects.filter(author=current_user)
         page = self.paginate_queryset(user_ads)
