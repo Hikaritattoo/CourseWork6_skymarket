@@ -8,7 +8,10 @@ class Command(BaseCommand):
     help = "Loads fixtures from fixtures dir"
     fixtures_dir = "fixtures"
     loaddata_command = "loaddata"
-    filenames = ["users", "ad", "comments",]
+    filenames = ["users",
+                 "ad",
+                 "comments",
+                 ]
 
     def handle(self, *args, **options):
         for fixture_filename in self.filenames:

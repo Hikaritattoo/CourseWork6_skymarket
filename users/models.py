@@ -4,9 +4,12 @@ from users.managers import UserManager
 
 
 class User(AbstractBaseUser):
-    USER = 'user'
     ADMIN = 'admin'
-    ROLES = [(USER, USER), (ADMIN, ADMIN)]
+    USER = 'user'
+    ROLES = [
+        (ADMIN, ADMIN),
+        (USER, USER)
+    ]
 
     first_name = models.CharField(max_length=100, null=True)
     last_name = models.CharField(max_length=150, null=True)
