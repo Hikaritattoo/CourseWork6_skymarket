@@ -1,5 +1,5 @@
-# Course Work 6
-## Skymarket
+# Skymarket
+
 ### ads site
 
 * Backend: django restframework
