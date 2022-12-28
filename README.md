@@ -11,12 +11,11 @@
 
 ***To launch project locally use command: docker-compose up --build -d***
 
-Данная курсовая работа представляет собой backend-часть для сайта объявлений. Frontend-часть уже готова.
-Бэкенд-часть проекта предполагает реализацию следующего функционала:
+This course work is a backend part for the ad site. The frontend part is already done. The backend part of the project involves the implementation of the following functionality:
 
-- Авторизация и аутентификация пользователей.
-- Распределение ролей между пользователями (пользователь и админ).
-- Восстановление пароля через электронную почту (не обязательно).
-- CRUD для объявлений на сайте (админ может удалять или редактировать все объявления, а пользователи только свои).
-- Под каждым объявлением пользователи могут оставлять отзывы.
-- В заголовке сайта можно осуществлять поиск объявлений по названию.
+- Authorization and authentication of users.
+- Distribution of roles between users (user and administrator).
+- Password recovery via email (optional).
+- CRUD for ads on the site (admin can delete or edit all ads, and users can only edit their own).
+- Under each ad, users can leave reviews.
+- In the header of the site, you can search for ads by name.
